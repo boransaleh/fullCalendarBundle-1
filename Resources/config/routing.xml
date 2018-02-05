@@ -16,5 +16,25 @@
         <default key="_controller">fullCalendarBundle:Calendar:resize</default>
         <option key="expose">true</option>
     </route>
+    <route id="fullcalendar_delevent" path="/fullcalendar/delete">
+        <default key="_controller">fullCalendarBundle:Calendar:delete</default>
+        <option key="expose">true</option>
+    </route>
+    <route id="fullcalendar_addevent" path="/fullcalendar/add">
+        <default key="_controller">fullCalendarBundle:Calendar:add</default>
+        <option key="expose">true</option>
+    </route>
+    <route id="fullcalendar_checkevent" path="/fullcalendar/check">
+        <default key="_controller">fullCalendarBundle:Calendar:check</default>
+        <option key="expose">true</option>
+    </route>
+    <route id="fullcalendar_getdozentevent" path="/fullcalendar/geteventdozent">
+        <default key="_controller">fullCalendarBundle:Calendar:geteventdozent</default>
+        <option key="expose">true</option>
+    </route>
+    <route id="fullcalendar_feirtage" path="/fullcalendar/reloadfeirtage">
+        <default key="_controller">AppBundle:feirtage:MigrateFreiTagEvents</default>
+        <option key="expose">true</option>
+    </route>
 
 </routes>
